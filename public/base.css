@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;   
     justify-content: center;
-    width: 100%;
+    max-width:100%;
 }
 
 .session-container-text {
@@ -27,7 +27,7 @@
     font-weight: 600;
 }
 .session-container-text-icon-box{
-    margin-top: 55px;
+    margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -66,3 +66,22 @@
     color: #959595;
     font-size: 0.9rem;
 }
+
+
+
+
+
+
+.col-lg-20pt{
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 15px;
+}
+.col-lg-20pt-img{
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0;
+}
+
+
+
