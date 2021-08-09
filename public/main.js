@@ -103,9 +103,31 @@ $(document).ready(function(){
     $('.nav-bar-sm-items_icon').click(function(){
         $(this).parent().siblings().slideToggle("slow");
     })
+
+
+
+
+    $('.carousel-left').on('click',function(){
+        $('.carousel-v2 .row-no-wrap').animate({
+            left:'-50%'
+        },'slow',function(){
+            $('.carousel-v2 .row-no-wrap').append($('.carousel-v2 .row-no-wrap').children().first())
+            $('.carousel-v2 .row-no-wrap').css('left','auto')
+        })
+    })
+
+    $('.carousel-right').on('click',function(){
+        $('.carousel-v2 .row-no-wrap').animate({
+            right:'-50%'
+        },'slow',function(){
+            $('.carousel-v2 .row-no-wrap').prepend($('.carousel-v2 .row-no-wrap').children().last())
+            $('.carousel-v2 .row-no-wrap').css('right','auto')
+        })
+    })
+    
     
 })
-function scroll_to_fix_navbar(e){
+function scroll_to_fix_navbar(){
 
     
     if($(document).width() >= 992)
